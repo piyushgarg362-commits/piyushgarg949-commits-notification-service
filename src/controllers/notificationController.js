@@ -1,21 +1,15 @@
-const notifications =
-  require("../models/notificationModel");
+const notifications = require("../models/notificationModel");
 
 const getNotifications = (req, res) => {
   res.json(notifications);
 };
 
 const createNotification = (req, res) => {
-  const {
-    userId,
-    message,
-    type
-  } = req.body;
+  const { userId, message, type } = req.body;
 
   if (!userId || !message || !type) {
     return res.status(400).json({
-      message:
-        "userId, message and type are required"
+      message: "userId, message and type are required"
     });
   }
 

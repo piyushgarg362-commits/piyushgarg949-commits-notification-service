@@ -1,7 +1,5 @@
 const express = require("express");
-
-const notificationRoutes =
-  require("./routes/notificationRoutes");
+const notificationRoutes = require("./routes/notificationRoutes");
 
 const app = express();
 
@@ -14,9 +12,6 @@ app.get("/health", (req, res) => {
   });
 });
 
-app.use(
-  "/notifications",
-  notificationRoutes
-);
+app.use("/notifications", notificationRoutes);
 
 module.exports = app;
