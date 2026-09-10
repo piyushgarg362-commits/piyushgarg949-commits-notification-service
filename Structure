@@ -1,0 +1,17 @@
+notification-service/
+├── src/
+│   ├── controllers/
+│   │   └── notificationController.js
+│   ├── models/
+│   │   └── notificationModel.js
+│   ├── routes/
+│   │   └── notificationRoutes.js
+│   ├── app.js
+│   └── server.js
+├── tests/
+│   └── notification.test.js
+├── .env.example
+├── .gitignore
+├── Dockerfile
+├── package.json
+└── README.md
